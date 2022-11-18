@@ -11,4 +11,18 @@ $(document).ready(function() {
         $('.tab_list li').hide();
         $('.tab_list li').eq(idx).fadeIn(100);
     });
+    var swiper = new Swiper(".review_list", {
+        slidesPerView: 1,
+        spaceBetween: 70,
+        slidesPerGroup: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
 });

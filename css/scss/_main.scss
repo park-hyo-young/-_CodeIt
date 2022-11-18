@@ -416,4 +416,19 @@
 .codeit_review {
     padding: 6.5rem 0 4.5rem;
     background-color: $violet_03;
+    .content_title {
+        color: $white;
+    }
+    .review_list {
+        margin-top: 4.5rem;
+        padding: 0 3.5rem;
+    }
+    .swiper-wrapper {
+        .swiper-slide {
+            padding: 2.5rem 3rem;
+            border-radius: 2rem .4rem;
+            color: $white;
+            background-color: #5b04ad;
+        }
+    }
 }
