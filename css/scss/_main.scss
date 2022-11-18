@@ -369,3 +369,51 @@
         }
     }
 }
+.syllabus_area {
+    padding: 6rem 0 12.5rem;
+    background-color: $violet_01;
+    .inner {
+        padding: 0 2.5rem;
+    }
+    figure {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .content_title {
+        margin-top: 4.5rem;
+        text-align: left;
+    }
+    .plan_list {
+        li {
+            margin-top: 4.5rem;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .list_num {
+            padding: 3.4rem 0 .5rem;
+            color: $violet_03;
+            font-weight: bold;
+            font-size: 2.3rem;
+            background: url('../images/deco_8.png') left center no-repeat;
+            background-size: 6rem;
+        }
+        .list_title {
+            margin-top: 2.8rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        .list_text {
+            margin-top: 1.5rem;
+            color: $gray_05;
+            line-height: 2.4rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+.codeit_review {
+    padding: 6.5rem 0 4.5rem;
+    background-color: $violet_03;
+}
