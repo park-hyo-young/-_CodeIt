@@ -1,0 +1,49 @@
+$main : #8f00ff;
+
+$white : #fff;
+$black : #000;
+
+$violet_01 : #faf9ff;
+$violet_02 : #8f21fb;
+$violet_03 : #6500c3;
+
+$gray_01 : #e0e0e0;
+$gray_02 : #dde0ea;
+$gray_03 : #b8b9c3;
+$gray_04 : #a9abb7;
+$gray_05 : #69666d;
+$gray_06 : #333236;
+
+.btn {
+    display: inline-block;
+    position: relative;
+    height: 5.8rem;
+    padding: 0 6.4rem 0 2.5rem;
+    border-radius: 2rem .5rem;
+    color: $white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 5.8rem;
+    background-color: $main;
+    box-shadow: 0 .6rem 1.8rem 0 rgba($color: $violet_03, $alpha: .29);
+    img {
+        position: absolute;
+        width: 2.3rem;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+    }
+    &:hover{
+        img {
+            animation: btnArrow .4s ease-in infinite alternate;
+        }
+    }
+    @keyframes btnArrow {
+        0% {
+            right: 3rem;
+        }
+        to {
+            right: 2rem;
+        }
+    }
+}
