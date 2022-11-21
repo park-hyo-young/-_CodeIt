@@ -427,11 +427,70 @@
         .swiper-slide {
             padding: 2.5rem 3rem;
             border-radius: 2rem .4rem;
-            color: $white;
             background-color: #5b04ad;
-            .slide_text {
-                height: 22rem;
+            p, span {
+                color: $white;
             }
         }
+    }
+    .user_proflie {
+        align-items: center;
+        margin-bottom: 3rem;
+        .user_img {
+            width: 2.8rem;
+            height: 2.8rem;
+            margin-right: 1rem;
+            background: url('../images/user_01.png') center no-repeat;
+            background-size: 100%;
+        }
+        .user_name {
+            margin-right: .5rem;
+            color: $white;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        .star {
+            width: 8.5rem;
+            height: 1.4rem;
+            background: url('/images/review_star.png') center no-repeat;
+            background-size: 100%;
+        }
+    }
+    .review_title {
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    .review_text {
+        overflow-y: scroll;
+        height: 22.5rem;
+        padding-right: .5rem;
+        color: $gray_02;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        /* 아래의 모든 코드는 영역::코드로 사용 */
+        &::-webkit-scrollbar {
+            width: .6rem;  /* 스크롤바의 너비 */
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 30%; /* 스크롤바의 길이 */
+            background: #babac0; /* 스크롤바의 색상 */
+            border-radius: 5rem;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 2rem;
+        height: 3.4rem;
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-next {
+        background: url('../images/arrow-right.png') center no-repeat;
+        background-size: 100%;
+    }
+    .swiper-button-prev {
+        background: url('../images/arrow-left.png') center no-repeat;
+        background-size: 100%;
     }
 }
