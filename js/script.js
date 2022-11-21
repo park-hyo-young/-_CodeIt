@@ -11,6 +11,8 @@ $(document).ready(function() {
         $('.tab_list li').hide();
         $('.tab_list li').eq(idx).fadeIn(100);
     });
+
+    // 리뷰 슬라이드
     var swiper = new Swiper(".review_list", {
         slidesPerView: 1,
         spaceBetween: 70,
@@ -26,5 +28,14 @@ $(document).ready(function() {
                 spaceBetween: 25,
             }
         },
+    });
+
+    // 스크롤 따라오는 버튼
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.follow').fadeIn(100);
+        } else {
+            $('.follow').fadeOut(100);
+        }
     });
 });
