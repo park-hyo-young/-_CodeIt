@@ -13,7 +13,6 @@ $gray_03 : #b8b9c3;
 $gray_04 : #a9abb7;
 $gray_05 : #69666d;
 $gray_06 : #333236;
-
 .btn {
     display: inline-block;
     position: relative;
@@ -78,12 +77,16 @@ footer {
             margin: 0 .35rem;
             border-radius: 50%;
             background-color: $gray_03;
+            animation:  .4s ease-in infinite alternate;
             img {
                 position: absolute;
                 width: 1.2rem;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+            }
+            &:hover {
+                background-color: #7c00ff;
             }
         }
     }
@@ -142,6 +145,50 @@ footer {
         }
     }
 }
+.popup_back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba($color: $black, $alpha: .5);
+    z-index: 200;
+    .popup_area {
+        position: relative;
+        padding: 4rem 0 5rem;
+        width: 28rem;
+        top: 50%;
+        left: 50%;
+        border-radius: .5rem;
+        transform: translate(-50%, -50%);
+        background-color: $white;
+    }
+    .popup_textbox {
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .popup_title {
+        color: $violet_03;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .popup_text {
+        margin-top: 1rem;
+        color: $gray_05;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .close_btn {
+        position: absolute;
+        width: 3.5rem;
+        height: 3.5rem;
+        top: -1rem;
+        right: -1rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
 @media (min-width : 768px) {
     
 }
