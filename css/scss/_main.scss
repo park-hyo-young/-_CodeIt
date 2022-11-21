@@ -436,18 +436,27 @@
     .user_proflie {
         align-items: center;
         margin-bottom: 3rem;
-        .user_img {
-            width: 2.8rem;
-            height: 2.8rem;
-            margin-right: 1rem;
-            background: url('../images/user_01.png') center no-repeat;
-            background-size: 100%;
-        }
         .user_name {
+            padding: .1rem 0 .1rem 3.8rem;
             margin-right: .5rem;
             color: $white;
+            line-height: 2.8rem;
             font-size: 1.6rem;
             font-weight: bold;
+            background: url('../images/user_01.png') left center no-repeat;
+            background-size: 2.8rem 2.8rem;
+            &.custom_01 {
+                background-image: url('/images/user_02.png');
+            }
+            &.custom_02 {
+                background-image: url('/images/user_04.png');
+            }
+            &.custom_03 {
+                background-image: url('/images/user_03.png');
+            }
+            &.custom_04 {
+                background-image: url('/images/user_05.png');
+            }
         }
         .star {
             width: 8.5rem;
