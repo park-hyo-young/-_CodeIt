@@ -77,7 +77,7 @@ footer {
             margin: 0 .35rem;
             border-radius: 50%;
             background-color: $gray_03;
-            animation:  .4s ease-in infinite alternate;
+            transition: 0.3s all;
             img {
                 position: absolute;
                 width: 1.2rem;
@@ -149,13 +149,16 @@ footer {
     position: fixed;
     width: 100%;
     height: 100%;
+    padding: 5rem 0 3rem;
     top: 0;
     background-color: rgba($color: $black, $alpha: .5);
     z-index: 200;
     .popup_area {
+        overflow-y: auto;
         position: relative;
         padding: 4rem 0 5rem;
         width: 28rem;
+        height: 100%;
         top: 50%;
         left: 50%;
         border-radius: .5rem;
@@ -177,15 +180,49 @@ footer {
         font-size: 1.4rem;
         line-height: 2rem;
     }
-    .close_btn {
-        position: absolute;
-        width: 3.5rem;
-        height: 3.5rem;
-        top: -1rem;
-        right: -1rem;
-        img {
-            width: 100%;
+    .popup_form {
+        padding: 3rem 0;
+        .input_group {
+            padding-top: 2rem;
+            &:first-child {
+                padding-top: 0;
+            }
+            span {
+                display: block;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: $gray_06;
+            }
+            input {
+                width: 100%;
+                height: 4.3rem;
+                padding: 0 1.5rem;
+                border: .1rem solid $gray_02;
+                font-size: 1.4rem;
+                &::placeholder {
+                    color: #757575;
+                    font-size: 1.4rem;
+                }
+            }
+            .input_text {
+                margin-top: 1.2rem;
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
         }
+    }
+}
+.close_btn {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(12rem);
+    z-index: 1;
+    img {
+        width: 100%;
     }
 }
 

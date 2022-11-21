@@ -45,14 +45,14 @@ $(document).ready(function() {
 		$(".popup_back").stop().fadeIn(100);
 	});
 
-    //클릭시 팝업 닫기
-	$(".popup_back").click(function () {
-		if ($(this).attr('aria-hidden') != 'false') {
-            $('.popup_back').stop().fadeOut(100);
-		}
-		return false;
-	});
-	$('.popup_area .close_btn').click(function(){
-        $('.popup_back').stop().fadeOut(100);
-	});
+    // //클릭시 팝업 닫기
+	// $(".popup_back").click(function () {
+	// 	if ($(this).attr('aria-hidden') != 'false') {
+    //         $('.popup_back').stop().fadeOut(100);
+	// 	}
+	// 	return false;
+	// });
+	// $('.popup_area .close_btn').click(function(){
+    //     $('.popup_back').stop().fadeOut(100);
+	// });
 });
