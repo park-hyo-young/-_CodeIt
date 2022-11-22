@@ -42,3 +42,28 @@
     max-width: 34.5rem;
     margin: 0 auto;
 }
+
+@media (min-width : 768px) {
+    .wrap {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    // 스크롤바 커스텀
+    ::-webkit-scrollbar {
+        width: .6rem; 
+    }
+    ::-webkit-scrollbar-thumb {
+        height: 30%;
+        background: #babac0;
+        border-radius: 5rem;
+    }
+    .inner {
+        width: 100%;
+        padding: 0 4rem;
+        margin: 0 auto;
+    }
+    .max_width {
+        max-width: 64.8rem;
+    }
+}
