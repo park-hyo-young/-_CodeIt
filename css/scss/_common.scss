@@ -252,12 +252,7 @@ footer {
         font-size: 2rem;
         line-height: 6.5rem;
         &.follow {
-            position: sticky;
-            bottom: 4rem;
-            margin-bottom: 9rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 100;
+            margin-bottom: 0rem;
         }
     }
     header {
