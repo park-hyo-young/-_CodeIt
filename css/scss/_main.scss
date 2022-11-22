@@ -187,6 +187,9 @@
 // 강의 설명
 .lecture_area {
     padding: 3.5rem 0 10rem;
+    .lecture_background {
+        display: none;
+    }
     .text_inner {
         padding: 0 1.2rem;
     }
@@ -254,44 +257,47 @@
     }
     .generation_list {
         position: relative;
-        &::after {
-            position: absolute;
-            content: '';
-            width: .2rem;
-            height: calc(100% - .1rem);
-            top: .1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            border-left: 2px dotted $gray_02;
-        }
-        > li {
-            position: relative;
-            align-items: start;
+        &.mo {
+            display: block;
             &::after {
                 position: absolute;
                 content: '';
-                width: .8rem;
-                height: .8rem;
-                top: 3rem;
-                left: calc(50% - .1rem);
-                border-radius: 50%;
+                width: .2rem;
+                height: calc(100% - .1rem);
+                top: .1rem;
+                left: 50%;
                 transform: translateX(-50%);
-                background-color: $violet_03;
-                z-index: 1;
+                border-left: 2px dotted $gray_02;
             }
-            &.right {
-                flex-direction: row-reverse;
-                .text_box {
-                    text-align: right;
-                    padding-left: 0;
-                    padding-right: 2.5rem;
+            > li {
+                position: relative;
+                align-items: start;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: .8rem;
+                    height: .8rem;
+                    top: 3rem;
+                    left: calc(50% - .1rem);
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                    background-color: $violet_03;
+                    z-index: 1;
+                }
+                &.right {
+                    flex-direction: row-reverse;
+                    .text_box {
+                        text-align: right;
+                        padding-left: 0;
+                        padding-right: 2.5rem;
+                    }
                 }
             }
-        }
-        figure {
-            width: 50%;
-            img {
-                width: 100%;
+            figure {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
             }
         }
         .text_box {
@@ -318,6 +324,9 @@
                 }
             }
         }
+        &.pc {
+            display: none;
+        }
     }
 }
 // 탭메뉴
@@ -330,6 +339,9 @@
 }
 .tab_btns {
     margin-bottom: 2.5rem;
+    &.pc {
+        display: none;
+    }
     li {
         max-width: 7.5rem;
         min-width: 6rem;
@@ -593,6 +605,9 @@
             line-height: 3rem;
         }
     }
+    .content_report {
+        overflow: visible;
+    }
     // 교육과정 설명 영역
     .curriculum_area {
         padding: 10rem 0 10rem;
@@ -645,6 +660,7 @@
     }
     // 강의 설명
     .lecture_area {
+        position: relative;
         padding: 5.5rem 0 11rem;
         .text_inner {
             padding: 0 8rem;
@@ -659,8 +675,8 @@
             .deco {
                 width: 14.5rem;
                 height: 19.7rem;
-                right: -4.5rem;
-                bottom: -9.8rem;
+                right: -7rem;
+                bottom: -3rem;
             }
         }
         .lecture_box {
@@ -677,76 +693,86 @@
                 }
             }
         }
+        .lecture_background {
+            display: block;
+            position: absolute;
+            width: 37.5rem;
+            height: 21.2rem;
+            right: 0;
+            bottom: -2.3rem;
+            border-radius: 50rem 0 0 50rem ;
+            background-color: $violet_03;
+            z-index: -3;
+        }
     }
     // 세대별 강의
     .generation {
         .content_title {
-            padding: 6.5rem 0 4rem;
-            line-height: 2.1rem;
+            padding: 11rem 0 5rem;
+            line-height: 2.8rem;
         }
         .generation_list {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: '';
-                width: .2rem;
-                height: calc(100% - .1rem);
-                top: .1rem;
-                left: 50%;
-                transform: translateX(-50%);
-                border-left: 2px dotted $gray_02;
+            &.mo {
+                display: none;
             }
-            > li {
+            &.pc {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 position: relative;
-                align-items: start;
                 &::after {
                     position: absolute;
                     content: '';
-                    width: .8rem;
-                    height: .8rem;
-                    top: 3rem;
-                    left: calc(50% - .1rem);
-                    border-radius: 50%;
-                    transform: translateX(-50%);
-                    background-color: $violet_03;
-                    z-index: 1;
+                    width: 100%;
+                    height: .2rem;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 3rem);
+                    border-bottom: 2px dotted $gray_02;
                 }
-                &.right {
-                    flex-direction: row-reverse;
-                    .text_box {
-                        text-align: right;
-                        padding-left: 0;
-                        padding-right: 2.5rem;
+                > li {
+                    position: relative;
+                    flex-direction: column;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: .8rem;
+                        height: .8rem;
+                        top: 50%;
+                        left: calc(50% - .1rem);
+                        border-radius: 50%;
+                        transform: translate(-50%, 2.9rem);
+                        background-color: $violet_03;
+                        z-index: 1;
                     }
                 }
-            }
-            figure {
-                width: 50%;
-                img {
-                    width: 100%;
+                figure {
+                    width: 16rem;
+                    height: 16rem;
+                    margin-bottom: 4rem;
+                    img {
+                        width: 100%;
+                    }
                 }
-            }
-            .text_box {
-                width: 50%;
-                padding: 2.5rem 0 3rem 2.5rem;
-                text-align: left;
                 .point {
-                    margin-bottom: 1.5rem;
-                    color: $violet_03;
-                    font-size: 1.6rem;
+                    margin-bottom: 7.5rem;
+                    font-size: 1.8rem;
                     font-weight: 500;
                 }
-                .list_title {
-                    margin-bottom: 2rem;
-                    font-size: 1.7rem;
-                    font-weight: 500;
-                }
-                .list_text {
-                    margin-bottom: 1.5rem;
-                    font-size: 1.5rem;
-                    color: $gray_05;
-                    &:last-child {
-                        margin-bottom: 0;
+                .text_box {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                    .list_title {
+                        margin-bottom: 3rem;
+                        font-size: 2rem;
+                    }
+                    .list_text {
+                        margin-bottom: 2.5rem;
+                        font-size: 1.6rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
@@ -754,35 +780,36 @@
     }
     // 탭메뉴
     .tab_area {
-        margin: 0 auto;
-        padding: 9.5rem 1.5rem 10rem;
+        padding: 16rem 1.5rem 14.5rem;
+        .content_title {
+            font-size: 3rem;
+        }
         .content_comment {
-            margin-bottom: 6rem;
+            margin: 2.5rem 0 8.5rem;
         }
     }
     .tab_btns {
         margin-bottom: 2.5rem;
+        &.mo {
+            display: none;
+        }
+        &.pc {
+            display: flex;
+        }
         li {
-            max-width: 7.5rem;
-            min-width: 6rem;
+            max-width: 15.5rem;
             width: 100%;
-            margin-right: 1rem;
-            &:last-child {
-                margin-right: 0;
-            }
-            &.active{
-                a {
-                    box-shadow: 0 0.6rem 1.8rem 0 rgba($color: #462c5e, $alpha: .19);
-                }
-            }
+            margin-right: 1.5rem;
             a {
-                display: block;
-                padding: 1.2rem 0;
-                text-align: center;
-                border-radius: 5rem;
-                border: .1rem solid #f1f0f4;
+                height: 6.8rem;
+                padding: 2.2rem 0;
+                font-size: 1.9rem;
+                border-radius: 2.5rem .8rem;
                 img {
-                    width: 2.2rem;
+                    margin-top: -.3rem;
+                    margin-right: 1.8rem;
+                    width: 2.6rem;
+                    vertical-align: middle;
                 }
             }
         }
