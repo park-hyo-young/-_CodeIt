@@ -34,10 +34,12 @@ $(document).ready(function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.follow').fadeIn(100);
+            
         } else {
             $('.follow').fadeOut(100);
         }
     });
+
 
     // 유투브 영상 팝업 불러오기
 	$(".content").on("click", function(e){
