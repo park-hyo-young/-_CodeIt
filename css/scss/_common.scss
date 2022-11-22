@@ -146,6 +146,7 @@ footer {
     }
 }
 .popup_back {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -162,6 +163,7 @@ footer {
         top: 50%;
         left: 50%;
         border-radius: .5rem;
+        text-align: center;
         transform: translate(-50%, -50%);
         background-color: $white;
     }
@@ -181,9 +183,10 @@ footer {
         line-height: 2rem;
     }
     .popup_form {
-        padding: 3rem 0;
+        padding: 3rem 0 2.5rem;
         .input_group {
             padding-top: 2rem;
+            text-align: left;
             &:first-child {
                 padding-top: 0;
             }
@@ -204,6 +207,9 @@ footer {
                     color: #757575;
                     font-size: 1.4rem;
                 }
+                &:focus {
+                    border-color: #7c00ff;
+                }
             }
             .input_text {
                 margin-top: 1.2rem;
@@ -211,6 +217,18 @@ footer {
                 line-height: 2rem;
             }
         }
+    }
+    .terms_agree {
+        color: $gray_04;
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .btn {
+        width: 12.2rem;
+        padding: 0;
+        margin-top: 3rem;
+        text-align: center;
     }
 }
 .close_btn {

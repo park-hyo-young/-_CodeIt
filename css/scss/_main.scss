@@ -477,15 +477,6 @@
         color: $gray_02;
         font-size: 1.5rem;
         line-height: 2.5rem;
-        /* 아래의 모든 코드는 영역::코드로 사용 */
-        &::-webkit-scrollbar {
-            width: .6rem;  /* 스크롤바의 너비 */
-        }
-        &::-webkit-scrollbar-thumb {
-            height: 30%; /* 스크롤바의 길이 */
-            background: #babac0; /* 스크롤바의 색상 */
-            border-radius: 5rem;
-        }
     }
     .swiper-button-next, .swiper-button-prev {
         width: 2rem;
@@ -511,6 +502,516 @@
         font-weight: 400;
         strong {
             font-size: 2.1rem;
+        }
+    }
+}
+
+@media (min-width : 768px) {
+    // 메인 화면
+    .main {
+        padding-top: 3.7rem;
+        .text_area {
+            padding-left: .5rem;
+            h2 {
+                margin-bottom: 2rem;
+                font-size: 3.3rem;
+                line-height: 4.7rem;
+            }
+            p {
+                margin-bottom: 4rem;
+                font-size: 1.6rem;
+                line-height: 2.7rem;
+            }
+        }
+        figure {
+            width: 100%;
+            padding: 1.5rem 0 4.7rem 2rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 타사 리뷰 영역
+    .quote_area {
+        position: relative;
+        padding: 5rem 0 4.5rem;
+        background-color: $violet_03;
+        .top_deco {
+            position: absolute;
+            width: 1.7rem;
+            top: -4rem;
+            left: 2rem;
+            img {
+                width: 100%;
+            }
+        }
+        .text_area {
+            padding-bottom: 3rem;
+            .comment {
+                padding: 0 3rem;
+                color: $white;
+                font-size: 2.1rem;
+                line-height: 3.4rem;
+                strong {
+                    color: $white;
+                    font-size: 2.1rem;
+                }
+            }
+        }
+        .quote_box {
+            padding: 4rem 3rem 3rem 6rem;
+            border-radius: 2rem .5rem;
+            background: url('../images/deco_2.png') top 2rem left 1.5rem no-repeat;
+            background-size: 6.5rem 5.3rem;
+            box-shadow: 0 .2rem 2.4rem 0 rgba($color: #060623, $alpha: .35);
+            .quote {
+                color: $white;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+
+            }
+            .origin {
+                display: block;
+                margin-top: 2.5rem;
+                color: #d8d8d8;
+                font-size: 1.5rem;
+                text-align: right;
+            }
+        }
+    }
+    // 브랜드 로고 영역
+    .brand_area {
+        padding: 7.5rem 0 7rem;
+        figure {
+            width: 100%;
+            &.mo {
+                display: block;
+            }
+            &.pc {
+                display: none;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .content_report {
+        overflow: hidden;
+        position: relative;
+        padding: 0 1rem;
+        text-align: center;
+        background-color: $violet_01;
+        z-index: -2;
+    }
+    .content_title {
+        font-weight: bold;
+        font-size: 2.1rem;
+        text-align: center;
+        line-height: 3.4rem;
+    }
+    .content_comment {
+        margin: 2.8rem 0 3rem;
+        color: $gray_05;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.6rem;
+        strong {
+            color: $gray_05;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+    // 교육과정 설명 영역
+    .curriculum_area {
+        padding: 8rem 0 10rem;
+        .content_title {
+            padding-bottom: 1rem;
+        }
+        .curriculum_box {
+            position: relative;
+            margin-top: 2.5rem;
+            padding: 4rem 0 5.5rem;
+            border-radius: 4rem .5rem;
+            border : solid .1rem #efeff8;
+            background-color: $white;
+            box-shadow: 0 0.2rem 2.8rem 0 rgba($color: #9696b0, $alpha: .24);
+            .back_deco {
+                position: absolute;
+                width: 12rem;
+                height: 12rem;
+                bottom: -5.2rem;
+                left: -4rem;
+                z-index: -1;
+                background: url('../images/deco_3.png') center no-repeat;
+                background-size: 100%;
+            }
+        }
+        .icon {
+            display: block;
+            margin: 0 auto;
+            width: 7rem;
+            height: 7rem;
+            background-size: 100% 100% !important;
+            background: center no-repeat;
+            &.general {
+                background-image: url('../images/content_01.png');
+            }
+            &.developer {
+                background-image: url('../images/content_02.png');
+            }
+        }
+        .comment {
+            padding-top: 3.5rem;
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+        .curriculum {
+            position: relative;
+            padding: 2rem 0 3.5rem;
+            color: $violet_03;
+            font-size: 2.1rem;
+            font-weight: bold;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 2.4rem;
+                height: .2rem;
+                left: 50%;
+                bottom: 1rem;
+                transform: translateX(-50%) rotate(-25deg);
+                background-color: $violet_03;
+            }
+        }
+        .curriculum_list {
+            padding-bottom: 3.4rem;
+            li {
+                padding-top: 2.5rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    // 강의 설명
+    .lecture_area {
+        padding: 3.5rem 0 10rem;
+        .text_inner {
+            padding: 0 1.2rem;
+        }
+        .lecture_wrap {
+            position: relative;
+            .deco {
+                position: absolute;
+                z-index: -1;
+                width: 14.5rem;
+                height: 19.7rem;
+                right: -4.5rem;
+                bottom: -9.8rem;
+                background: url('../images/deco_4.png');
+                background-size: 14.5rem 19.7rem;
+            }
+        }
+        .lecture_box {
+            padding: 3rem 0 4rem;
+            border-radius: 3rem .5rem;
+            background-color: $white;
+            box-shadow: 0 0.7rem 2.8rem 0 rgba($color: #9696b0, $alpha: .24);
+            figure {
+                width: 12.2rem;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                margin-top: 4rem;
+                color: $gray_05;
+                font-size: 1.8rem;
+            }
+            &.violet {
+                width: 100%;
+                margin-top: 1.5rem;
+                padding-top: 6rem;
+                background-image: linear-gradient(293deg, #8400ff, #a25df4);
+                box-shadow: 0 6.5rem 3.2rem -3rem rgba($color: $violet_03, $alpha: .25);
+                .deco_back {
+                    position: absolute;
+                    width: 14.3rem;
+                    top: 0;
+                    left: 0;
+                }
+                figure {
+                    width: 21.4rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    color: $white;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    // 세대별 강의
+    .generation {
+        .content_title {
+            padding: 6.5rem 0 4rem;
+            line-height: 2.1rem;
+        }
+        .generation_list {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: .2rem;
+                height: calc(100% - .1rem);
+                top: .1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                border-left: 2px dotted $gray_02;
+            }
+            > li {
+                position: relative;
+                align-items: start;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: .8rem;
+                    height: .8rem;
+                    top: 3rem;
+                    left: calc(50% - .1rem);
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                    background-color: $violet_03;
+                    z-index: 1;
+                }
+                &.right {
+                    flex-direction: row-reverse;
+                    .text_box {
+                        text-align: right;
+                        padding-left: 0;
+                        padding-right: 2.5rem;
+                    }
+                }
+            }
+            figure {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            .text_box {
+                width: 50%;
+                padding: 2.5rem 0 3rem 2.5rem;
+                text-align: left;
+                .point {
+                    margin-bottom: 1.5rem;
+                    color: $violet_03;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+                .list_title {
+                    margin-bottom: 2rem;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+                .list_text {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.5rem;
+                    color: $gray_05;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    // 탭메뉴
+    .tab_area {
+        margin: 0 auto;
+        padding: 9.5rem 1.5rem 10rem;
+        .content_comment {
+            margin-bottom: 6rem;
+        }
+    }
+    .tab_btns {
+        margin-bottom: 2.5rem;
+        li {
+            max-width: 7.5rem;
+            min-width: 6rem;
+            width: 100%;
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active{
+                a {
+                    box-shadow: 0 0.6rem 1.8rem 0 rgba($color: #462c5e, $alpha: .19);
+                }
+            }
+            a {
+                display: block;
+                padding: 1.2rem 0;
+                text-align: center;
+                border-radius: 5rem;
+                border: .1rem solid #f1f0f4;
+                img {
+                    width: 2.2rem;
+                }
+            }
+        }
+    }
+    .tab_list {
+        width: 100%;
+        height: 100%;
+        padding: .5rem 0;
+        border-radius: .3rem;
+        border: .2rem solid #f2f2f2;
+        img {
+            width: 100%;
+        }
+        li {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .syllabus_area {
+        padding: 6rem 0 12.5rem;
+        background-color: $violet_01;
+        .inner {
+            padding: 0 2.5rem;
+        }
+        figure {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .content_title {
+            margin-top: 4.5rem;
+            text-align: left;
+        }
+        .plan_list {
+            li {
+                margin-top: 4.5rem;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+            .list_num {
+                padding: 3.4rem 0 .5rem;
+                color: $violet_03;
+                font-weight: bold;
+                font-size: 2.3rem;
+                background: url('../images/deco_8.png') left center no-repeat;
+                background-size: 6rem;
+            }
+            .list_title {
+                margin-top: 2.8rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            .list_text {
+                margin-top: 1.5rem;
+                color: $gray_05;
+                line-height: 2.4rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .codeit_review {
+        padding: 6.5rem 0 4.5rem;
+        background-color: $violet_03;
+        .content_title {
+            color: $white;
+        }
+        .review_list {
+            margin-top: 4.5rem;
+            padding: 0 3.5rem;
+        }
+        .swiper-wrapper {
+            .swiper-slide {
+                padding: 2.5rem 3rem;
+                border-radius: 2rem .4rem;
+                background-color: #5b04ad;
+                p, span {
+                    color: $white;
+                }
+            }
+        }
+        .user_proflie {
+            align-items: center;
+            margin-bottom: 3rem;
+            .user_name {
+                padding: .1rem 0 .1rem 3.8rem;
+                margin-right: .5rem;
+                color: $white;
+                line-height: 2.8rem;
+                font-size: 1.6rem;
+                font-weight: bold;
+                background: url('../images/user_01.png') left center no-repeat;
+                background-size: 2.8rem 2.8rem;
+                &.custom_01 {
+                    background-image: url('/images/user_02.png');
+                }
+                &.custom_02 {
+                    background-image: url('/images/user_04.png');
+                }
+                &.custom_03 {
+                    background-image: url('/images/user_03.png');
+                }
+                &.custom_04 {
+                    background-image: url('/images/user_05.png');
+                }
+            }
+            .star {
+                width: 8.5rem;
+                height: 1.4rem;
+                background: url('/images/review_star.png') center no-repeat;
+                background-size: 100%;
+            }
+        }
+        .review_title {
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        .review_text {
+            overflow-y: scroll;
+            height: 22.5rem;
+            padding-right: .5rem;
+            color: $gray_02;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            width: 2rem;
+            height: 3.4rem;
+            &::after {
+                display: none;
+            }
+        }
+        .swiper-button-next {
+            background: url('../images/arrow-right.png') center no-repeat;
+            background-size: 100%;
+        }
+        .swiper-button-prev {
+            background: url('../images/arrow-left.png') center no-repeat;
+            background-size: 100%;
+        }
+    }
+    // 문의하기 영역
+    .contact_area {
+        text-align: center;
+        padding: 7rem 0 3.5rem;
+        .content_title {
+            font-weight: 400;
+            strong {
+                font-size: 2.1rem;
+            }
         }
     }
 }
