@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     // 스크롤 따라오는 버튼
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 150 && $(this).scrollTop() + $(this).height() != $(document).height()) {
             $('.follow').fadeIn(100);
             
         } else {
