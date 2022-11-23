@@ -711,17 +711,17 @@
                 }
             }
         }
-        .lecture_background {
-            display: block;
-            position: absolute;
-            width: 37.5rem;
-            height: 21.2rem;
-            right: 0;
-            bottom: -2.3rem;
-            border-radius: 50rem 0 0 50rem ;
-            background-color: $violet_03;
-            z-index: -3;
-        }
+    }
+    .lecture_background {
+        display: block;
+        position: absolute;
+        width: 37.5rem;
+        height: 21.2rem;
+        right: 0;
+        bottom: -2.3rem;
+        border-radius: 50rem 0 0 50rem ;
+        background-color: $violet_03;
+        z-index: -3;
     }
     // 세대별 강의
     .generation {
@@ -1061,6 +1061,7 @@
         }
     }
     .content_report {
+        position: relative;
         overflow: visible;
         padding: 0;
     }
@@ -1105,10 +1106,13 @@
         justify-content: space-between;
         padding: 50px 0 110px;
         margin: 0 auto;
+        width: 1000px;
         .text_inner {
             width: 46.5%;
-            padding: 0 8rem;
-            text-align: left;
+            padding: 0 45px 0 10px;
+            .content_title, .content_comment {
+                text-align: left;
+            }
         }
         .lecture_aling {
             display: flex;
@@ -1117,11 +1121,9 @@
             height: 36.5rem;
         }
         .lecture_wrap {
-            width: 50%;
+            width: 225px;
             .deco {
-                width: 14.5rem;
-                height: 19.7rem;
-                right: -7rem;
+                right: -75px;
                 bottom: -3rem;
             }
         }
@@ -1129,9 +1131,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 28.5rem;
-            padding: 7rem 0 4.5rem;
+            margin-right: 10px;
+            padding: 75px 0 60px;
             &.violet {
+                width: 285px;
                 height: 100%;
                 margin-top: 0;
                 .deco_back {
@@ -1139,17 +1142,17 @@
                 }
             }
         }
-        .lecture_background {
-            display: block;
-            position: absolute;
-            width: 37.5rem;
-            height: 21.2rem;
-            right: 0;
-            bottom: -2.3rem;
-            border-radius: 50rem 0 0 50rem ;
-            background-color: $violet_03;
-            z-index: -3;
-        }
+    }
+    .lecture_background {
+        display: block;
+        position: absolute;
+        width: 706px;
+        height: 333px;
+        right: 0;
+        bottom: -2.3rem;
+        border-radius: 50rem 0 0 50rem ;
+        background-color: $violet_03;
+        z-index: -3;
     }
     // 세대별 강의
     .generation {
