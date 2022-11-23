@@ -377,7 +377,9 @@ footer {
         line-height: 6.5rem;
     }
     header {
-        padding: 2rem 0;
+        .inner {
+            padding: 0 44px;
+        }
         .logo {
             display: block;
             width: 8.4rem;
