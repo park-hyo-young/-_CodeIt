@@ -1337,3 +1337,382 @@
         }
     }
 }
+@media (min-width : 1199px) {
+    // 메인 화면
+    .main {
+        padding: 0 0 88px;
+        align-items: center;
+        justify-content: center;
+        &.flex {
+            &.flex_wrap {
+                flex-wrap: nowrap;
+            }
+        }
+        .text_area {
+            width: 435px;
+            padding-left: 0;
+            margin: 0;
+            .inner {
+                padding: 0;
+            }
+            h2 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 70px;
+            }
+            .point {
+                display: block;
+                margin-bottom: 7px;
+                font-size: 19px;
+                font-weight: bold;
+                color: $violet_03;
+            }
+        }
+        figure {
+            width: 50%;
+            padding: 0 0 0 10px;
+            margin: 0;
+        }
+    }
+    // 타사 리뷰 영역
+    .quote_area {
+        padding: 45px 40px 60px;
+        .top_deco {
+            left: 50%;
+            transform: translateX(-32.6rem);
+        }
+        .inner {
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            padding: 0;
+            &.flex {
+                &.flex_wrap {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+        .text_area {
+            width: 310px;
+            padding-bottom: 0;
+            text-align: left;
+            .comment {
+                padding: 0;
+                line-height: 43px;
+                &.br {
+                    display: block;
+                    padding: 0;
+                }
+            }
+        }
+        .quote_box {
+            margin: 0 20px 0 60px;
+            background-size: 94px 78px;
+            .origin {
+                margin-top: 10px;
+            }
+        }
+    }
+    // 브랜드 로고 영역
+    .brand_area {
+        padding: 80px 0 110px;
+        figure {
+            &.mo {
+                display: none;
+            }
+            &.pc {
+                display: block;
+            }
+        }
+    }
+    .content_report {
+        padding: 0;
+    }
+    // 교육과정 설명 영역
+    .curriculum_area {
+        padding: 130px 0 100px;
+        .content_title {
+            padding: 0 0 0 40px;
+        }
+        .curriculum_align {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+        .curriculum_box {
+            width: 425px;
+            padding: 55px 0 50px;
+            .back_deco {
+                bottom: -110px;
+                left: -585px;
+            }
+        }
+        .comment {
+            padding-top: 30px;
+            font-size: 18px;
+        }
+        .curriculum {
+            font-size: 25px;
+        }
+        .curriculum_list {
+            li {
+                &:first-child {
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+    // 강의 설명
+    .lecture_area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 80px;
+        margin: 0 auto;
+        width: 1000px;
+        .text_inner {
+            width: 46.5%;
+            padding: 0 35px 0 10px;
+            .content_title, .content_comment {
+                text-align: left;
+            }
+        }
+        .lecture_aling {
+            display: flex;
+            justify-content: space-between;
+            width: 53.5%;
+            height: 350px;
+        }
+        .lecture_wrap {
+            width: 285px;
+            .deco {
+                right: -85px;
+                bottom: -30px;
+            }
+        }
+        .lecture_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 225px;
+            margin-right: 10px;
+            padding: 75px 0 60px;
+            &.violet {
+                width: 285px;
+                height: 100%;
+                animation: btnArrow 1.5s ease-in-out infinite alternate;
+                @keyframes btnArrow {
+                    0% {
+                        top: -15px;
+                    }
+                    50% {
+                        top: 0;
+                    }
+                    100% {
+                        top: -15px;
+                    }
+                }
+                &::before {
+                    right: -85px;
+                    bottom: -30px;
+                    animation: 0;
+                }
+            }
+        }
+    }
+    .lecture_background {
+        width: calc(50% - 120px);
+        height: 332px;
+        bottom: -70px;
+    }
+    // 세대별 강의
+    .generation {
+        .content_title {
+            padding: 135px 0 50px;
+            line-height: 30px;
+            font-size: 30px;
+        }
+        .generation_list {
+            padding: 0 87px;
+            &.mo {
+                display: none;
+            }
+            &.pc {
+                figure {
+                    margin-bottom: 30px;
+                }
+                .text_box {
+                    .list_title {
+                        margin-bottom: 23px;
+                    }
+                }
+            }
+        }
+    }
+    // 탭메뉴
+    .tab_area {
+        position: relative;
+        padding: 16rem 0 14.5rem;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 544px;
+            height: 1190px;
+            left: 0;
+            top: -50%;
+            background: url('../images/deco_5.png') center no-repeat;
+            background-size: 100%;
+            z-index: -1;
+        }
+        .content_title {
+            font-size: 3rem;
+            text-align: left;
+        }
+        .content_comment {
+            margin: 28px 0 65px;
+            text-align: left;
+        }
+    }
+    .tab_btns {
+        margin-bottom: 2.5rem;
+        &.mo {
+            display: none;
+        }
+        &.pc {
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+        }
+        li {
+            max-width: 180px;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 25px;
+            a {
+                height: 72px;
+                padding: 2.3rem 0;
+                font-size: 22px;
+                background-color: $white;
+            }
+        }
+    }
+    .tab_pc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tab_list {
+        position: relative;
+        width: 717px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 77px;
+            height: 77px;
+            left: -30px;
+            bottom: -40px;
+            background: url('../images/deco_6.png') center no-repeat;
+            background-size: 100%;
+            z-index: -1;
+        }
+    }
+    .syllabus_area {
+        padding: 170px 0 150px;
+        .top_deco {
+            width: 165px;
+            height: 206px;
+            top: -105px;
+        }
+        .inner {
+            max-width: 1000px;
+            padding: 0 2.5rem;
+        }
+        .content_title {
+            text-align: left;
+            font-size: 2.1rem;
+            line-height: 4.3rem;
+        }
+        .plan_list {
+            li {
+                margin-top: 125px;
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .codeit_review {
+        .review_list {
+            margin-top: 40px;
+        }
+        .max_width {
+            width: 650px;
+        }
+        .swiper-wrapper {
+            .swiper-slide {
+                width: 31.5rem;
+                padding: 2.5rem 3.5rem;
+                border-radius: 2rem .4rem;
+                background-color: #5b04ad;
+                p, span {
+                    color: $white;
+                }
+            }
+        }
+        .user_proflie {
+            margin-bottom: 2.5rem;
+        }
+        .review_title {
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 2.7rem;
+        height: 5.3rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-37rem, 2rem);
+    }
+    .swiper-button-next {
+        transform: translate(34.5rem, 2rem);
+    }
+    // 문의하기 영역
+    .contact_area {
+        text-align: left;
+        padding: 170px 0 220px;
+        &::before {
+            width: 717px;
+            height: 557px;
+            top: -5.9rem;
+            left: 50%;
+            transform: translateX(-818px);
+            background-size: 717px 557px;
+        }
+        &::after {
+            position: absolute; 
+            content: '';
+            width: 344px;
+            height: 344px;
+            right: 0;
+            bottom: -110px;
+            background: url('/images/deco_10.png') center no-repeat;
+            background-size: 100%;
+            z-index: -1;
+        }
+        padding-left: 50%;
+        .content_title {
+            padding-bottom: 50px;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 58px;
+            strong {
+                font-size: 40px;
+            }
+        }
+        >.content {
+            display: inline-block;
+        }
+    }
+}
