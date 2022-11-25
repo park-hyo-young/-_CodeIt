@@ -1340,47 +1340,32 @@
 @media (min-width : 1199px) {
     // 메인 화면
     .main {
-        padding: 0 0 88px;
-        align-items: center;
-        justify-content: center;
-        &.flex {
-            &.flex_wrap {
-                flex-wrap: nowrap;
-            }
+        position: relative;
+        padding: 0 0 85px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 27px;
+            height: 36px;
+            right: 0;
+            bottom: 90px;
+            background: url('/images/deco_0.png') center no-repeat;
+            background-size: 100%;
         }
         .text_area {
             width: 435px;
-            padding-left: 0;
-            margin: 0;
-            .inner {
-                padding: 0;
-            }
-            h2 {
-                margin-bottom: 30px;
-            }
-            p {
-                margin-bottom: 70px;
-            }
-            .point {
-                display: block;
-                margin-bottom: 7px;
-                font-size: 19px;
-                font-weight: bold;
-                color: $violet_03;
-            }
+            margin-right: 115px;
         }
         figure {
-            width: 50%;
-            padding: 0 0 0 10px;
-            margin: 0;
+            width: 789px;
         }
     }
     // 타사 리뷰 영역
     .quote_area {
         padding: 45px 40px 60px;
         .top_deco {
-            left: 50%;
-            transform: translateX(-32.6rem);
+            left: 170px;
+            transform: translateX(0);
         }
         .inner {
             align-items: center;

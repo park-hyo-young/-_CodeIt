@@ -381,14 +381,15 @@ footer {
         }
     }
 }
-@media (min-width : 1199px) {
+@media (min-width : 1199px) {*
     .mo_none {
         display: block;
     }
     header {
+        padding: 24px 0;
         .inner {
             max-width: 1170px;
-            padding: 0 44px;
+            padding: 0 0;
         }
     }
     footer {
