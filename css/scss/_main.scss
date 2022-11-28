@@ -1588,6 +1588,29 @@
         }
     }
     .codeit_review {
+        position: relative;
+        height: 580px;
+        padding: 90px 0 120px;
+        background-color: $white;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 1757px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 0 500px 500px 0;
+            z-index: -10;
+            background-color: $violet_03;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 145px;
+            height: 197px;
+            background: url('/images/deco_9.png') center no-repeat;
+            background-size: 100%;
+        }
         .review_list {
             margin-top: 40px;
         }

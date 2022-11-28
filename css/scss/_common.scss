@@ -14,6 +14,9 @@ $gray_04 : #a9abb7;
 $gray_05 : #69666d;
 $gray_06 : #333236;
 
+body {
+    overflow-x: hidden;
+}
 .btn {
     display: inline-block;
     position: relative;
