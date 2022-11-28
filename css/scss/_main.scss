@@ -193,6 +193,20 @@
     .text_inner {
         padding: 0 1.2rem;
     }
+    .lecture_aling {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 14.5rem;
+            height: 19.7rem;
+            right: -4.5rem;
+            bottom: -9.8rem;
+            background: url('../images/deco_4.png') center no-repeat;
+            background-size: 14.5rem 19.7rem;
+            z-index: -1;
+        }
+    }
     .lecture_box {
         padding: 3rem 0 4rem;
         border-radius: 3rem .5rem;
@@ -211,23 +225,11 @@
             font-size: 1.8rem;
         }
         &.violet {
-            position: relative;
             width: 100%;
             margin-top: 1.5rem;
             padding-top: 6rem;
             background-image: linear-gradient(293deg, #8400ff, #a25df4);
             box-shadow: 0 6.5rem 3.2rem -3rem rgba($color: $violet_03, $alpha: .25);
-            &::before {
-                position: absolute;
-                content: '';
-                width: 14.5rem;
-                height: 19.7rem;
-                right: -4.5rem;
-                bottom: -9.8rem;
-                background: url('../images/deco_4.png') center no-repeat;
-                background-size: 14.5rem 19.7rem;
-                z-index: -1;
-            }
             .deco_back {
                 position: absolute;
                 width: 14.3rem;
@@ -684,6 +686,12 @@
             display: flex;
             justify-content: space-between;
             height: 36.5rem;
+            &::before {
+                width: 14.5rem;
+                height: 19.7rem;
+                right: -8rem;
+                bottom: -3rem;
+            }
         }
         .lecture_wrap {
             width: 50%;
@@ -704,12 +712,6 @@
                 width: 32.6rem;
                 height: 100%;
                 margin-top: 0;
-                &::before {
-                    width: 14.5rem;
-                    height: 19.7rem;
-                    right: -7rem;
-                    bottom: -3rem;
-                }
                 .deco_back {
                     width: 18.3rem;
                 }
@@ -1089,7 +1091,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0 80px;
+        padding: 10px 0 110px;
         margin: 0 auto;
         width: 1000px;
         .text_inner {
@@ -1104,6 +1106,10 @@
             justify-content: space-between;
             width: 53.5%;
             height: 350px;
+            &::before {
+                right: -85px;
+                bottom: -36.5px;
+            }
         }
         .lecture_wrap {
             width: 285px;
@@ -1120,6 +1126,7 @@
             margin-right: 10px;
             padding: 75px 0 60px;
             &.violet {
+                position: relative;
                 width: 285px;
                 height: 100%;
                 animation: btnArrow 1.5s ease-in-out infinite alternate;
@@ -1133,11 +1140,6 @@
                     100% {
                         top: -15px;
                     }
-                }
-                &::before {
-                    right: -85px;
-                    bottom: -30px;
-                    animation: 0;
                 }
             }
         }
@@ -1453,7 +1455,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0 80px;
+        padding: 10px 0 110px;
         margin: 0 auto;
         width: 1000px;
         .text_inner {
@@ -1473,7 +1475,7 @@
             width: 285px;
             .deco {
                 right: -85px;
-                bottom: -30px;
+                bottom: -10px;
             }
         }
         .lecture_box {
@@ -1486,7 +1488,6 @@
             &.violet {
                 width: 285px;
                 height: 100%;
-                animation: btnArrow 1.5s ease-in-out infinite alternate;
                 @keyframes btnArrow {
                     0% {
                         top: -15px;
