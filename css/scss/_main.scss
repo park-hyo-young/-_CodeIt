@@ -1249,12 +1249,9 @@
         }
         .inner {
             max-width: 1000px;
-            padding: 0 2.5rem;
         }
         .content_title {
             text-align: left;
-            font-size: 2.1rem;
-            line-height: 4.3rem;
         }
         .plan_list {
             li {
@@ -1272,34 +1269,6 @@
         .max_width {
             width: 650px;
         }
-        .swiper-wrapper {
-            .swiper-slide {
-                width: 31.5rem;
-                padding: 2.5rem 3.5rem;
-                border-radius: 2rem .4rem;
-                background-color: #5b04ad;
-                p, span {
-                    color: $white;
-                }
-            }
-        }
-        .user_proflie {
-            margin-bottom: 2.5rem;
-        }
-        .review_title {
-            margin-bottom: 2rem;
-            font-size: 1.6rem;
-        }
-    }
-    .swiper-button-next, .swiper-button-prev {
-        width: 2.7rem;
-        height: 5.3rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-37rem, 2rem);
-    }
-    .swiper-button-next {
-        transform: translate(34.5rem, 2rem);
     }
     // 문의하기 영역
     .contact_area {
@@ -1308,7 +1277,6 @@
         &::before {
             width: 717px;
             height: 557px;
-            top: -5.9rem;
             left: 50%;
             transform: translateX(-818px);
             background-size: 717px 557px;
@@ -1552,7 +1520,6 @@
             z-index: -1;
         }
         .content_title {
-            font-size: 3rem;
             text-align: left;
         }
         .content_comment {
@@ -1561,7 +1528,6 @@
         }
     }
     .tab_btns {
-        margin-bottom: 2.5rem;
         &.mo {
             display: none;
         }
@@ -1577,9 +1543,7 @@
             margin-bottom: 25px;
             a {
                 height: 72px;
-                padding: 2.3rem 0;
                 font-size: 22px;
-                background-color: $white;
             }
         }
     }
@@ -1614,11 +1578,6 @@
             max-width: 1000px;
             padding: 0 2.5rem;
         }
-        .content_title {
-            text-align: left;
-            font-size: 2.1rem;
-            line-height: 4.3rem;
-        }
         .plan_list {
             li {
                 margin-top: 125px;
@@ -1633,14 +1592,13 @@
             margin-top: 40px;
         }
         .max_width {
-            width: 650px;
+            width: 1000px;
         }
         .swiper-wrapper {
             .swiper-slide {
                 width: 31.5rem;
                 padding: 2.5rem 3.5rem;
                 border-radius: 2rem .4rem;
-                background-color: #5b04ad;
                 p, span {
                     color: $white;
                 }
@@ -1653,16 +1611,19 @@
             margin-bottom: 2rem;
             font-size: 1.6rem;
         }
+        .review_text {
+            height: 115px;
+        }
     }
     .swiper-button-next, .swiper-button-prev {
         width: 2.7rem;
         height: 5.3rem;
         top: 50%;
         left: 50%;
-        transform: translate(-37rem, 2rem);
+        transform: translate(-550px, 2rem);
     }
     .swiper-button-next {
-        transform: translate(34.5rem, 2rem);
+        transform: translate(520px, 2rem);
     }
     // 문의하기 영역
     .contact_area {
