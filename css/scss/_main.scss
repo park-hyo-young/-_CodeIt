@@ -500,6 +500,7 @@
     }
 }
 .swiper-button-next, .swiper-button-prev {
+    display: none;
     width: 2rem;
     height: 3.4rem;
     top: 50%;
@@ -538,6 +539,11 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+}
+@media (min-width : 345px)  {
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+    }
 }
 @media (min-width : 768px) {
     // 메인 화면
@@ -1129,8 +1135,8 @@
                 position: relative;
                 width: 285px;
                 height: 100%;
-                animation: btnArrow 1.5s ease-in-out infinite alternate;
-                @keyframes btnArrow {
+                animation: bound 1.5s ease-in-out infinite alternate;
+                @keyframes bound {
                     0% {
                         top: -15px;
                     }
@@ -1278,6 +1284,7 @@
             width: 717px;
             height: 557px;
             left: 50%;
+            top: -59px;
             transform: translateX(-818px);
             background-size: 717px 557px;
         }
@@ -1323,11 +1330,12 @@
             background-size: 100%;
         }
         .text_area {
-            width: 435px;
+            width: 430px;
             margin-right: 115px;
         }
         figure {
-            width: 789px;
+            width: 749px;
+            padding: 0;
         }
     }
     // 타사 리뷰 영역
@@ -1456,7 +1464,7 @@
             &.violet {
                 width: 285px;
                 height: 100%;
-                @keyframes btnArrow {
+                @keyframes bound {
                     0% {
                         top: -15px;
                     }
@@ -1595,11 +1603,12 @@
         &::after {
             position: absolute;
             content: '';
-            width: 1757px;
+            width: calc(50% + 795px);
+            min-width: 1757px;
             height: 100%;
             top: 0;
             left: 0;
-            border-radius: 0 500px 500px 0;
+            border-radius: 0 500px 500px 0; 
             z-index: -10;
             background-color: $violet_03;
         }
@@ -1608,6 +1617,9 @@
             content: '';
             width: 145px;
             height: 197px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             background: url('/images/deco_9.png') center no-repeat;
             background-size: 100%;
         }

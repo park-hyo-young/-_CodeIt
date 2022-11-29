@@ -7,6 +7,7 @@
 @import '_main';
 
 .wrap {
+    overflow: hidden;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -52,14 +53,6 @@
     }
 }
 @media (min-width : 991px) {
-    .inner {
-        padding: 0 20px;
-    }
-    .max_width {
-        max-width: 1000px;
-    }
-}
-@media (min-width : 1199px) {
     .inner {
         padding: 0 20px;
     }

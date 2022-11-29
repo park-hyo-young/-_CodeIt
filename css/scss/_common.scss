@@ -14,9 +14,6 @@ $gray_04 : #a9abb7;
 $gray_05 : #69666d;
 $gray_06 : #333236;
 
-body {
-    overflow-x: hidden;
-}
 .btn {
     display: inline-block;
     position: relative;
@@ -317,7 +314,7 @@ footer {
         padding: 4.5rem 0 3.5rem;
         .popup_area {
             width: 61rem;
-            height: 77.6rem;
+            max-height: 77.6rem;
         }
         .inner {
             padding: 7rem 9rem 5rem;
