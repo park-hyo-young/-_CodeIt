@@ -253,11 +253,7 @@ footer {
     header {
         padding: 2rem 0;
         .logo {
-            display: block;
             width: 8.4rem;
-            img {
-                width: 100%;
-            }
         }
     }
     footer {
@@ -330,7 +326,7 @@ footer {
             font-size: 1.6rem;
         }
         .popup_form {
-            padding: 4rem 0 3rem;
+            padding: 4rem 1.5rem 3rem;
             .input_group {
                 padding-top: 2rem;
                 &:first-child {
@@ -350,6 +346,15 @@ footer {
                 }
             }
         }
+        .pc_half {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .input_group {
+                width: 190px;
+                padding-top: 0;
+            }
+        }
         .terms_agree {
             line-height: 2.2rem;
             font-size: 1.4rem;
@@ -367,9 +372,6 @@ footer {
     }
 }
 @media (min-width : 991px) {
-    .mo_none {
-        display: block;
-    }
     header {
         .inner {
             padding: 0 44px;
@@ -382,13 +384,10 @@ footer {
     }
 }
 @media (min-width : 1199px) {
-    .mo_none {
-        display: block;
-    }
     header {
         padding: 24px 0;
         .inner {
-            max-width: 1170px;
+            max-width: 1180px;
             padding: 0 0;
         }
     }
