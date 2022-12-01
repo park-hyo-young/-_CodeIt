@@ -81,9 +81,6 @@
         &.mo {
             display: block;
         }
-        &.pc {
-            display: none;
-        }
         img {
             width: 100%;
         }
@@ -225,6 +222,7 @@
             font-size: 1.8rem;
         }
         &.violet {
+            position: relative;
             width: 100%;
             margin-top: 1.5rem;
             padding-top: 6rem;
@@ -272,7 +270,7 @@
             }
             > li {
                 position: relative;
-                align-items: start;
+                align-items: center;
                 &::after {
                     position: absolute;
                     content: '';
@@ -720,6 +718,7 @@
                 margin-top: 0;
                 .deco_back {
                     width: 18.3rem;
+                    top: 0;
                 }
             }
         }
@@ -947,7 +946,8 @@
             width: 53.7rem;
             height: 42.7rem;
             top: -4.5rem;
-            left: -8.9rem;
+            left: 50%;
+            transform: translateX(-582px);
             background: url('/images/main_02.png') center no-repeat;
             background-size: 53.7rem 42.7rem;
             z-index: -1;
@@ -1283,7 +1283,6 @@
         &::before {
             width: 717px;
             height: 557px;
-            left: 50%;
             top: -59px;
             transform: translateX(-818px);
             background-size: 717px 557px;
@@ -1302,7 +1301,6 @@
         padding-left: 50%;
         .content_title {
             padding-bottom: 50px;
-            font-weight: 400;
             font-size: 40px;
             line-height: 58px;
             strong {
@@ -1407,8 +1405,8 @@
             width: 425px;
             padding: 55px 0 50px;
             .back_deco {
-                bottom: -110px;
-                left: -585px;
+                bottom: -115px;
+                left: -610px;
             }
         }
         .comment {
@@ -1583,8 +1581,8 @@
             top: -105px;
         }
         .inner {
-            max-width: 1000px;
-            padding: 0 2.5rem;
+            max-width: 1020px;
+            padding: 0;
         }
         .plan_list {
             li {
