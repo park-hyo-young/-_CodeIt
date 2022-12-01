@@ -124,8 +124,9 @@
         border : solid .1rem #efeff8;
         background-color: $white;
         box-shadow: 0 0.2rem 2.8rem 0 rgba($color: #9696b0, $alpha: .24);
-        .back_deco {
+        &::before {
             position: absolute;
+            content: '';
             width: 12rem;
             height: 12rem;
             bottom: -5.2rem;
@@ -385,9 +386,6 @@
     position: relative;
     padding: 6rem 0 12.5rem;
     background-color: $violet_01;
-    .top_deco {
-        display: none;
-    }
     .inner {
         padding: 0 2.5rem;
     }
@@ -859,13 +857,15 @@
     }
     .syllabus_area {
         padding: 12.5rem 0 15rem;
-        .top_deco {
-            display: block;
+        &::before {
             position: absolute;
+            content: '';
             width: 10.3rem;
             height: 15.5rem;
             top: -7.7rem;
             right: 0;
+            background: url('/images/deco_7.png') center no-repeat;
+            background-size: 100%;
         }
         .inner {
             max-width: 64.8rem;
@@ -1234,7 +1234,7 @@
     }
     .syllabus_area {
         padding: 170px 0 150px;
-        .top_deco {
+        &::before {
             width: 165px;
             height: 206px;
             top: -105px;
@@ -1553,7 +1553,7 @@
     }
     .syllabus_area {
         padding: 170px 0 150px;
-        .top_deco {
+        &::before {
             width: 165px;
             height: 206px;
             top: -105px;
