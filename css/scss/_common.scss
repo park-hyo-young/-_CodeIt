@@ -240,9 +240,15 @@ footer {
 .mo_none {
     display: none;
 }
+.pc_none {
+    display: block;
+}
 @media (min-width : 768px) {
     .mo_none {
         display: block;
+    }
+    .pc_none {
+        display: none;
     }
     .btn {
         height: 6.5rem;
