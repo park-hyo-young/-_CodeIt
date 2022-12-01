@@ -336,9 +336,6 @@
 }
 .tab_btns {
     margin-bottom: 2.5rem;
-    &.pc {
-        display: none;
-    }
     li {
         max-width: 7.5rem;
         min-width: 6rem;
@@ -357,7 +354,11 @@
             padding: 1.2rem 0;
             text-align: center;
             border-radius: 5rem;
+            background-color: $white;
             border: .1rem solid #f1f0f4;
+            span {
+                display: none;
+            }
             img {
                 width: 2.2rem;
             }
@@ -817,13 +818,8 @@
         }
     }
     .tab_btns {
+        display: flex;
         margin-bottom: 2.5rem;
-        &.mo {
-            display: none;
-        }
-        &.pc {
-            display: flex;
-        }
         li {
             max-width: 15.5rem;
             width: 100%;
@@ -831,8 +827,11 @@
             a {
                 height: 6.8rem;
                 padding: 2.2rem 0;
-                font-size: 1.9rem;
                 border-radius: 2.5rem .8rem;
+                span {
+                    display: inline-block;
+                    font-size: 1.9rem;
+                }
                 img {
                     margin-top: -.3rem;
                     margin-right: 1.8rem;
@@ -1196,14 +1195,9 @@
     }
     .tab_btns {
         margin-bottom: 2.5rem;
-        &.mo {
-            display: none;
-        }
-        &.pc {
-            display: flex;
-            flex-direction: column;
-            width: 180px;
-        }
+        display: flex;
+        flex-direction: column;
+        width: 180px;
         li {
             max-width: 180px;
             width: 100%;
@@ -1212,8 +1206,9 @@
             a {
                 height: 72px;
                 padding: 2.3rem 0;
-                font-size: 22px;
-                background-color: $white;
+                span {
+                    font-size: 22px;
+                }
             }
         }
     }
