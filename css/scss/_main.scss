@@ -127,13 +127,17 @@
         &::before {
             position: absolute;
             content: '';
-            width: 12rem;
-            height: 12rem;
-            bottom: -5.2rem;
-            left: -4rem;
             z-index: -1;
-            background: url('../images/deco_3.png') center no-repeat;
-            background-size: 100%;
+        }
+        &:nth-child(2) {
+            &::before {
+                width: 12rem;
+                height: 12rem;
+                bottom: -5.2rem;
+                left: -4rem;
+                background: url('../images/deco_3.png') center no-repeat;
+                background-size: 100%;
+            }
         }
     }
     .icon {
@@ -255,47 +259,45 @@
     }
     .generation_list {
         position: relative;
-        &.mo {
-            display: block;
+        display: block;
+        &::after {
+            position: absolute;
+            content: '';
+            width: .2rem;
+            height: calc(100% - .1rem);
+            top: .1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 2px dotted $gray_02;
+        }
+        > li {
+            position: relative;
+            align-items: center;
             &::after {
                 position: absolute;
                 content: '';
-                width: .2rem;
-                height: calc(100% - .1rem);
-                top: .1rem;
-                left: 50%;
+                width: .8rem;
+                height: .8rem;
+                top: 3rem;
+                left: calc(50% - .1rem);
+                border-radius: 50%;
                 transform: translateX(-50%);
-                border-left: 2px dotted $gray_02;
+                background-color: $violet_03;
+                z-index: 1;
             }
-            > li {
-                position: relative;
-                align-items: center;
-                &::after {
-                    position: absolute;
-                    content: '';
-                    width: .8rem;
-                    height: .8rem;
-                    top: 3rem;
-                    left: calc(50% - .1rem);
-                    border-radius: 50%;
-                    transform: translateX(-50%);
-                    background-color: $violet_03;
-                    z-index: 1;
-                }
-                &.right {
-                    flex-direction: row-reverse;
-                    .text_box {
-                        text-align: right;
-                        padding-left: 0;
-                        padding-right: 2.5rem;
-                    }
+            &.right {
+                flex-direction: row-reverse;
+                .text_box {
+                    text-align: right;
+                    padding-left: 0;
+                    padding-right: 2.5rem;
                 }
             }
-            figure {
-                width: 50%;
-                img {
-                    width: 100%;
-                }
+        }
+        figure {
+            width: 50%;
+            img {
+                width: 100%;
             }
         }
         .text_box {
@@ -648,15 +650,20 @@
             border-radius: 4rem .5rem;
             &:nth-child(1) {
                 margin-top: 6rem;
+                &::before {
+                    width: 13rem;
+                    height: 13rem;
+                    left: -7.5rem;
+                    bottom: -5.5rem;
+                    background: url('../images/deco_3.png') center no-repeat;
+                    background-size: 100%;
+                }
             }
             &:nth-child(2) {
                 margin: -9rem 0 6.5rem;
-            }
-            .back_deco {
-                width: 13rem;
-                height: 13rem;
-                bottom: -10.5rem;
-                left: -42.5rem;
+                &::before {
+                    display: none;
+                }
             }
         }
         .comment {
@@ -1062,10 +1069,6 @@
         .curriculum_box {
             width: 425px;
             padding: 55px 0 50px;
-            .back_deco {
-                bottom: -110px;
-                left: -585px;
-            }
         }
         .comment {
             padding-top: 30px;
@@ -1382,10 +1385,6 @@
         .curriculum_box {
             width: 425px;
             padding: 55px 0 50px;
-            .back_deco {
-                bottom: -115px;
-                left: -610px;
-            }
         }
         .comment {
             padding-top: 30px;
