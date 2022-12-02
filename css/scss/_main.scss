@@ -572,8 +572,7 @@
             width: 3rem;
             height: 12.6rem;
             top: -7rem;
-            left: 50%;
-            transform: translateX(-32.6rem);
+            left: 16.6rem;
         }
         .text_area {
             width: 100%;
@@ -1017,10 +1016,6 @@
     // 타사 리뷰 영역
     .quote_area {
         padding: 45px 40px 60px;
-        &::before {
-            left: 50%;
-            transform: translateX(-32.6rem);
-        }
         .inner {
             align-items: center;
             justify-content: space-between;
@@ -1328,10 +1323,6 @@
     // 타사 리뷰 영역
     .quote_area {
         padding: 45px 40px 60px;
-        .top_deco {
-            left: 170px;
-            transform: translateX(0);
-        }
         .inner {
             align-items: center;
             justify-content: space-between;
