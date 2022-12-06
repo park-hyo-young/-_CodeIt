@@ -1,7 +1,6 @@
 // 메인 화면
 .main {
-    @include flex($direction: row, $justify: space-between, $align: center);
-    flex-wrap: wrap;
+    @include flex($justify: space-between, $wrap: wrap);
     padding-top: 3.7rem;
     .text_area {
         padding-left: .5rem;
@@ -33,6 +32,9 @@
     position: relative;
     padding: 5rem 0 4.5rem;
     background-color: $violet_03;
+    .inner {
+        @include flex($justify: space-between, $wrap: wrap);
+    }
     &::before {
         position: absolute;
         content: '';
@@ -274,7 +276,7 @@
         }
         > li {
             position: relative;
-            align-items: center;
+            @include flex;
             &::after {
                 position: absolute;
                 content: '';
@@ -288,7 +290,7 @@
                 z-index: 1;
             }
             &:nth-child(2) {
-                flex-direction: row-reverse;
+                @include flex($direction: row-reverse);
                 .text_box {
                     text-align: right;
                     padding-left: 0;
@@ -981,14 +983,8 @@
 @media (min-width : 991px) {
     // 메인 화면
     .main {
+        @include flex($justify: center);
         padding: 0 0 88px;
-        align-items: center;
-        justify-content: center;
-        &.flex {
-            &.flex_wrap {
-                flex-wrap: nowrap;
-            }
-        }
         .text_area {
             width: 435px;
             padding-left: 0;
@@ -1020,15 +1016,9 @@
     .quote_area {
         padding: 45px 40px 60px;
         .inner {
-            align-items: center;
-            justify-content: space-between;
+            @include flex($justify: space-between);
             max-width: 1000px;
             padding: 0;
-            &.flex {
-                &.flex_wrap {
-                    flex-wrap: nowrap;
-                }
-            }
         }
         .text_area {
             width: 310px;
@@ -1327,15 +1317,8 @@
     .quote_area {
         padding: 45px 40px 60px;
         .inner {
-            align-items: center;
-            justify-content: space-between;
             max-width: 1000px;
             padding: 0;
-            &.flex {
-                &.flex_wrap {
-                    flex-wrap: nowrap;
-                }
-            }
         }
         .text_area {
             width: 310px;
