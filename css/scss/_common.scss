@@ -48,6 +48,7 @@ footer {
     padding: 2.5rem 0 3rem;
     border-top: .1rem solid $gray_01;
     .sns_shortcut {
+        @include flex;
         margin-bottom: 5rem;
         a {
             display: block;
@@ -78,8 +79,7 @@ footer {
         margin-bottom: 2rem;
         text-align: center;
         .info_text {
-            align-items: center;
-            justify-content: center;
+            @include flex($wrap: wrap);
             span {
                 padding: 0 .6rem .7rem;
                 line-height: 2rem;
@@ -102,7 +102,7 @@ footer {
         }
     }
     .terms {
-        justify-content: center;
+        @include flex;
         a {
             display: block;
             padding: 0 .5rem;
@@ -252,10 +252,7 @@ footer {
     footer {
         padding: 2rem 0 ;
         .inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row-reverse;
+            @include flex($direction: row-reverse, $justify:space-between);
         }
         .sns_shortcut {
             margin-bottom: 0;
@@ -276,8 +273,7 @@ footer {
             margin-bottom: 0;
             text-align: left;
             .info_text {
-                align-items: center;
-                justify-content: start;
+                @include flex($direction: row-reverse, $justify:start);
                 span {
                     padding: 0 1.2rem .8rem .6rem;
                     &::after {
@@ -287,8 +283,8 @@ footer {
             }
         }
         .terms {
+            @include flex($justify:start);
             text-align: left;
-            justify-content: start;
             a {
                 padding: 0 .4rem;
                 &:first-child {
@@ -339,9 +335,7 @@ footer {
             }
         }
         .pc_half {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             .input_group {
                 width: 190px;
                 padding-top: 0;

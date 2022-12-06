@@ -458,7 +458,7 @@
         }
     }
     .user_proflie {
-        align-items: center;
+        @include flex($justify: space-between);
         margin-bottom: 3rem;
         .user_name {
             padding: .1rem 0 .1rem 3.8rem;
@@ -645,8 +645,7 @@
             text-align: left;
         }
         .curriculum_align {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
         }
         .curriculum_box {
             position: relative;
@@ -698,8 +697,7 @@
             padding: 0 8rem;
         }
         .lecture_aling {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             height: 36.5rem;
             &::before {
                 width: 14.5rem;
@@ -718,9 +716,7 @@
             }
         }
         .lecture_box {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex($direction:column, $justify:space-between);
             width: 28.5rem;
             padding: 7rem 0 4.5rem;
             &.violet {
@@ -1054,8 +1050,7 @@
             padding: 0 0 0 40px;
         }
         .curriculum_align {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             padding: 0 30px;
         }
         .curriculum_box {
@@ -1079,9 +1074,7 @@
     }
     // 강의 설명
     .lecture_area {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex($justify:space-between);
         padding: 10px 0 110px;
         margin: 0 auto;
         width: 1000px;
@@ -1093,8 +1086,7 @@
             }
         }
         .lecture_aling {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             width: 53.5%;
             height: 350px;
             &::before {
@@ -1110,9 +1102,7 @@
             }
         }
         .lecture_box {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex($direction:column, $justify:space-between);
             width: 225px;
             margin-right: 10px;
             padding: 75px 0 60px;
@@ -1202,9 +1192,7 @@
         }
     }
     .tab_pc {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex($justify:space-between);
     }
     .tab_list {
         position: relative;
@@ -1353,8 +1341,7 @@
             padding: 0 0 0 40px;
         }
         .curriculum_align {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             padding: 0 30px;
         }
         .curriculum_box {
@@ -1378,9 +1365,7 @@
     }
     // 강의 설명
     .lecture_area {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex($justify:space-between);
         padding: 10px 0 110px;
         margin: 0 auto;
         width: 1000px;
@@ -1392,8 +1377,7 @@
             }
         }
         .lecture_aling {
-            display: flex;
-            justify-content: space-between;
+            @include flex($justify:space-between);
             width: 53.5%;
             height: 350px;
         }
@@ -1405,9 +1389,7 @@
             }
         }
         .lecture_box {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex($direction:column, $justify:space-between);
             width: 225px;
             margin-right: 10px;
             padding: 75px 0 60px;
