@@ -1,19 +1,3 @@
-$main : #8f00ff;
-
-$white : #fff;
-$black : #000;
-
-$violet_01 : #faf9ff;
-$violet_02 : #8f21fb;
-$violet_03 : #6500c3;
-
-$gray_01 : #e0e0e0;
-$gray_02 : #dde0ea;
-$gray_03 : #b8b9c3;
-$gray_04 : #a9abb7;
-$gray_05 : #69666d;
-$gray_06 : #333236;
-
 .btn {
     display: inline-block;
     position: relative;
@@ -49,6 +33,9 @@ $gray_06 : #333236;
 }
 header {
     padding: 1.7rem 0;
+    .inner {
+        @include flex($direction: row, $justify: space-between, $align: center);
+    }
     .logo {
         display: block;
         width: 7.3rem;

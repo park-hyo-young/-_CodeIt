@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import '_reset';
 @import '_fonts';
+@import '_mixin';
 @import '_swiper-bundle';
 @import '_common';
 @import '_size';
@@ -11,15 +12,6 @@
     position: relative;
     width: 100%;
     z-index: 1;
-}
-// 스크롤바 커스텀
-::-webkit-scrollbar {
-    width: .6rem; 
-}
-::-webkit-scrollbar-thumb {
-    height: 30%;
-    background: #babac0;
-    border-radius: 5rem;
 }
 .inner {
     width: 100%;
