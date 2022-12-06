@@ -342,6 +342,7 @@
     }
 }
 .tab_btns {
+    @include flex($justify: space-between);
     margin-bottom: 2.5rem;
     li {
         max-width: 7.5rem;
@@ -406,6 +407,7 @@
         text-align: left;
     }
     .plan_list {
+        @include flex($wrap: wrap);
         li {
             margin-top: 4.5rem;
             &:first-child {
@@ -750,9 +752,7 @@
             line-height: 2.8rem;
         }
         .generation_list {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex($justify: space-between);
             position: relative;
             &::after {
                 position: absolute;
@@ -765,8 +765,8 @@
                 border-bottom: 2px dotted $gray_02;
             }
             > li {
+                @include flex($direction: column);
                 position: relative;
-                flex-direction: column;
                 &::after {
                     position: absolute;
                     content: '';
@@ -780,7 +780,7 @@
                     z-index: 1;
                 }
                 &:nth-child(2) {
-                    flex-direction: column;
+                    @include flex($direction: column);
                     .text_box {
                         padding: 0;
                         text-align: center;
@@ -832,7 +832,6 @@
         }
     }
     .tab_btns {
-        display: flex;
         margin-bottom: 2.5rem;
         li {
             max-width: 15.5rem;
@@ -1186,8 +1185,7 @@
     }
     .tab_btns {
         margin-bottom: 2.5rem;
-        display: flex;
-        flex-direction: column;
+        @include flex($direction:column);
         width: 180px;
         li {
             max-width: 180px;
@@ -1483,14 +1481,7 @@
         }
     }
     .tab_btns {
-        &.mo {
-            display: none;
-        }
-        &.pc {
-            display: flex;
-            flex-direction: column;
-            width: 180px;
-        }
+        width: 180px;
         li {
             max-width: 180px;
             width: 100%;
@@ -1503,9 +1494,7 @@
         }
     }
     .tab_pc {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex($justify:space-between);
     }
     .tab_list {
         position: relative;
