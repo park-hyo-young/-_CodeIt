@@ -34,7 +34,7 @@
 header {
     padding: 1.7rem 0;
     .inner {
-        @include flex($direction: row, $justify: space-between, $align: center);
+        @include flex($justify: space-between);
     }
     .logo {
         display: block;
@@ -71,19 +71,22 @@ footer {
             }
         }
     }
-    span, strong {
-        font-size: 1.1rem;
-        color: $gray_04;
-    }
     .info {
         margin-bottom: 2rem;
         text-align: center;
         .info_text {
             @include flex($wrap: wrap);
             span {
-                padding: 0 .6rem .7rem;
-                line-height: 2rem;
                 position: relative;
+                padding: 0 .6rem .7rem;
+                color: $gray_04;
+                font-size: 1.1rem;
+                line-height: 2rem;
+                strong {
+                    color: $gray_04;
+                    font-size: 1.1rem;
+                    line-height: 2rem;
+                }
                 &::after {
                     position: absolute;
                     content: '';
@@ -119,6 +122,7 @@ footer {
                 }
             }
             strong {
+                color: $gray_04;
                 font-size: 1.2rem;
             }
         }
@@ -273,7 +277,7 @@ footer {
             margin-bottom: 0;
             text-align: left;
             .info_text {
-                @include flex($direction: row-reverse, $justify:start);
+                @include flex($justify:start, $wrap:wrap);
                 span {
                     padding: 0 1.2rem .8rem .6rem;
                     &::after {
