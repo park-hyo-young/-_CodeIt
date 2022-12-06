@@ -617,6 +617,12 @@
     // 브랜드 로고 영역
     .brand_area {
         padding: 7.5rem 0 13rem;
+        .mo_none {
+            display: none;
+        }
+        .pc_none {
+            display: block;
+        }
     }
     .content_title {
         font-size: 2.8rem;
@@ -1038,6 +1044,12 @@
     }
     // 브랜드 로고 영역
     .brand_area {
+        .mo_none {
+            display: block;
+        }
+        .pc_none {
+            display: none;
+        }
         padding: 80px 0 110px;
     }
     .content_report {
