@@ -409,6 +409,7 @@
     .plan_list {
         @include flex($wrap: wrap);
         li {
+            width: 100%;
             margin-top: 4.5rem;
             &:first-child {
                 margin-top: 0;
@@ -1164,7 +1165,6 @@
     // 탭메뉴
     .tab_area {
         position: relative;
-        padding: 16rem 0 14.5rem;
         &::before {
             position: absolute;
             content: '';
@@ -1177,7 +1177,6 @@
             z-index: -1;
         }
         .content_title {
-            font-size: 3rem;
             text-align: left;
         }
         .content_comment {
@@ -1186,7 +1185,6 @@
         }
     }
     .tab_btns {
-        margin-bottom: 2.5rem;
         @include flex($direction:column);
         width: 180px;
         li {
@@ -1196,7 +1194,6 @@
             margin-bottom: 25px;
             a {
                 height: 72px;
-                padding: 2.3rem 0;
                 span {
                     font-size: 22px;
                 }
@@ -1455,17 +1452,6 @@
     .tab_area {
         position: relative;
         padding: 16rem 0 14.5rem;
-        &::before {
-            position: absolute;
-            content: '';
-            width: 544px;
-            height: 1190px;
-            left: 0;
-            top: -50%;
-            background: url('../images/deco_5.png') center no-repeat;
-            background-size: 100%;
-            z-index: -1;
-        }
         .content_title {
             text-align: left;
         }
