@@ -1476,28 +1476,7 @@
     .tab_pc {
         @include flex($justify:space-between);
     }
-    .tab_list {
-        position: relative;
-        width: 717px;
-        &::before {
-            position: absolute;
-            content: '';
-            width: 77px;
-            height: 77px;
-            left: -30px;
-            bottom: -40px;
-            background: url('../images/deco_6.png') center no-repeat;
-            background-size: 100%;
-            z-index: -1;
-        }
-    }
     .syllabus_area {
-        padding: 170px 0 150px;
-        &::before {
-            width: 165px;
-            height: 206px;
-            top: -105px;
-        }
         .inner {
             max-width: 1020px;
             padding: 0;
