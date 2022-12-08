@@ -1374,37 +1374,16 @@
     }
     // 강의 설명
     .lecture_area {
-        @include flex($justify:space-between);
-        padding: 10px 0 110px;
-        margin: 0 auto;
-        width: 1000px;
-        .text_inner {
-            width: 46.5%;
-            padding: 0 35px 0 10px;
-            .content_title, .content_comment {
-                text-align: left;
-            }
-        }
-        .lecture_aling {
-            @include flex($justify:space-between);
-            width: 53.5%;
+        width: 1020px;
+        .lecture_wrap {
             height: 350px;
         }
-        .lecture_wrap {
-            width: 285px;
-            .deco {
-                right: -85px;
-                bottom: -10px;
-            }
-        }
         .lecture_box {
-            @include flex($direction:column, $justify:space-between);
-            width: 225px;
+            height: 100%;
             margin-right: 10px;
             padding: 75px 0 60px;
             &.violet {
                 width: 285px;
-                height: 100%;
                 @keyframes bound {
                     0% {
                         top: -15px;
@@ -1416,18 +1395,8 @@
                         top: -15px;
                     }
                 }
-                &::before {
-                    right: -85px;
-                    bottom: -30px;
-                    animation: 0;
-                }
             }
         }
-    }
-    .lecture_background {
-        width: calc(50% - 120px);
-        height: 332px;
-        bottom: -70px;
     }
     // 탭메뉴
     .tab_btns {
