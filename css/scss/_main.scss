@@ -32,7 +32,7 @@
     position: relative;
     padding: 5rem 0 4.5rem;
     background-color: $violet_03;
-    .inner {
+    .box_area {
         @include flex($justify: space-between, $wrap: wrap);
     }
     &::before {
@@ -393,7 +393,7 @@
     position: relative;
     padding: 6rem 0 12.5rem;
     background-color: $violet_01;
-    .inner {
+    .box_area {
         padding: 0 2.5rem;
     }
     figure {
@@ -885,7 +885,7 @@
             background: url('/images/deco_7.png') center no-repeat;
             background-size: 100%;
         }
-        .inner {
+        .box_area {
             max-width: 64.8rem;
             padding: 0 2.5rem;
         }
@@ -991,7 +991,7 @@
             width: 435px;
             padding-left: 0;
             margin: 0;
-            .inner {
+            .box_area {
                 padding: 0;
             }
             h2 {
@@ -1017,7 +1017,7 @@
     // 타사 리뷰 영역
     .quote_area {
         padding: 45px 40px 60px;
-        .inner {
+        .box_area {
             @include flex($justify: space-between);
             max-width: 1000px;
             padding: 0;
@@ -1225,7 +1225,7 @@
             height: 206px;
             top: -105px;
         }
-        .inner {
+        .box_area {
             max-width: 1000px;
         }
         .content_title {
@@ -1244,7 +1244,7 @@
         .review_list {
             margin-top: 40px;
         }
-        .max_width {
+        .inner {
             width: 650px;
         }
     }
@@ -1288,7 +1288,6 @@
     // 메인 화면
     .main {
         position: relative;
-        padding: 0 0 85px;
         &::after {
             position: absolute;
             content: '';
@@ -1306,70 +1305,6 @@
         figure {
             width: 749px;
             padding: 0;
-        }
-    }
-    // 타사 리뷰 영역
-    .quote_area {
-        padding: 45px 40px 60px;
-        .inner {
-            max-width: 1000px;
-            padding: 0;
-        }
-        .text_area {
-            width: 310px;
-            padding-bottom: 0;
-            text-align: left;
-            .comment {
-                padding: 0;
-                line-height: 43px;
-                &.br {
-                    display: block;
-                    padding: 0;
-                }
-            }
-        }
-        .quote_box {
-            margin: 0 20px 0 60px;
-            background-size: 94px 78px;
-            .origin {
-                margin-top: 10px;
-            }
-        }
-    }
-    // 브랜드 로고 영역
-    .brand_area {
-        padding: 80px 0 110px;
-    }
-    .content_report {
-        padding: 0;
-    }
-    // 교육과정 설명 영역
-    .curriculum_area {
-        padding: 130px 0 100px;
-        .content_title {
-            padding: 0 0 0 40px;
-        }
-        .curriculum_align {
-            @include flex($justify:space-between);
-            padding: 0 30px;
-        }
-        .curriculum_box {
-            width: 425px;
-            padding: 55px 0 50px;
-        }
-        .comment {
-            padding-top: 30px;
-            font-size: 18px;
-        }
-        .curriculum {
-            font-size: 25px;
-        }
-        .curriculum_list {
-            li {
-                &:first-child {
-                    padding-top: 25px;
-                }
-            }
         }
     }
     // 강의 설명
@@ -1411,7 +1346,7 @@
         @include flex($justify:space-between);
     }
     .syllabus_area {
-        .inner {
+        .box_area {
             max-width: 1020px;
             padding: 0;
         }
@@ -1442,8 +1377,8 @@
             background: url('/images/deco_9.png') center no-repeat;
             background-size: 100%;
         }
-        .max_width {
-            width: 1000px;
+        .inner {
+            width: 1020px;
         }
         .review_text {
             height: 115px;
