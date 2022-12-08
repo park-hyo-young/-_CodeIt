@@ -1003,9 +1003,9 @@
             .point {
                 display: block;
                 margin-bottom: 7px;
+                color: $violet_03;
                 font-size: 19px;
                 font-weight: bold;
-                color: $violet_03;
             }
         }
         figure {
@@ -1545,36 +1545,15 @@
         .max_width {
             width: 1000px;
         }
-        .swiper-wrapper {
-            .swiper-slide {
-                width: 31.5rem;
-                padding: 2.5rem 3.5rem;
-                border-radius: 2rem .4rem;
-                p, span {
-                    color: $white;
-                }
-            }
-        }
-        .user_proflie {
-            margin-bottom: 2.5rem;
-        }
-        .review_title {
-            margin-bottom: 2rem;
-            font-size: 1.6rem;
-        }
         .review_text {
             height: 115px;
         }
     }
     .swiper-button-next, .swiper-button-prev {
-        width: 2.7rem;
-        height: 5.3rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-550px, 2rem);
+        transform: translate(-550px, 20px);
     }
     .swiper-button-next {
-        transform: translate(520px, 2rem);
+        transform: translate(520px, 20px);
     }
     // 문의하기 영역
     .contact_area {
