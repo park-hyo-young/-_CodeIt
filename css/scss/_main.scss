@@ -875,30 +875,18 @@
     }
     .syllabus_area {
         padding: 12.5rem 0 15rem;
-        &::before {
-            position: absolute;
-            content: '';
-            width: 10.3rem;
-            height: 15.5rem;
-            top: -7.7rem;
-            right: 0;
-            background: url('/images/deco_7.png') center no-repeat;
-            background-size: 100%;
-        }
         .box_area {
             max-width: 64.8rem;
             padding: 0 2.5rem;
         }
         .content_title {
             margin-top: 3rem;
-            text-align: left;
             font-size: 2.1rem;
             line-height: 4.3rem;
         }
         .plan_list {
+            @include flex($align:start, $justify:space-between, $wrap:wrap);
             margin-top: 5.5rem;
-            align-items: start;
-            justify-content: space-between;
             li {
                 width: 28rem;
                 margin-top: 8rem;
@@ -927,10 +915,6 @@
                 width: 31.5rem;
                 padding: 2.5rem 3.5rem;
                 border-radius: 2rem .4rem;
-                background-color: #5b04ad;
-                p, span {
-                    color: $white;
-                }
             }
         }
         .user_proflie {
@@ -944,8 +928,6 @@
     .swiper-button-next, .swiper-button-prev {
         width: 2.7rem;
         height: 5.3rem;
-        top: 50%;
-        left: 50%;
         transform: translate(-37rem, 2rem);
     }
     .swiper-button-next {
@@ -976,9 +958,6 @@
             strong {
                 font-size: 2.8rem;
             }
-        }
-        >.content {
-            display: inline-block;
         }
     }
 }
@@ -1029,10 +1008,6 @@
             .comment {
                 padding: 0;
                 line-height: 43px;
-                &.br {
-                    display: block;
-                    padding: 0;
-                }
             }
         }
         .quote_box {
@@ -1063,7 +1038,6 @@
             padding: 0 0 0 40px;
         }
         .curriculum_align {
-            @include flex($justify:space-between);
             padding: 0 30px;
         }
         .curriculum_box {
@@ -1109,6 +1083,7 @@
         }
         .lecture_wrap {
             width: 285px;
+            height: 350px;
             .deco {
                 right: -85px;
                 bottom: -30px;
@@ -1117,6 +1092,7 @@
         .lecture_box {
             @include flex($direction:column, $justify:space-between);
             width: 225px;
+            height: 100%;
             margin-right: 10px;
             padding: 75px 0 60px;
             &.violet {
@@ -1189,7 +1165,6 @@
         width: 180px;
         li {
             max-width: 180px;
-            width: 100%;
             margin-right: 0;
             margin-bottom: 25px;
             a {
@@ -1228,9 +1203,6 @@
         .box_area {
             max-width: 1000px;
         }
-        .content_title {
-            text-align: left;
-        }
         .plan_list {
             li {
                 margin-top: 125px;
@@ -1250,7 +1222,6 @@
     }
     // 문의하기 영역
     .contact_area {
-        text-align: left;
         padding: 170px 0 220px;
         &::before {
             width: 717px;
@@ -1278,9 +1249,6 @@
             strong {
                 font-size: 40px;
             }
-        }
-        >.content {
-            display: inline-block;
         }
     }
 }
@@ -1319,17 +1287,6 @@
             padding: 75px 0 60px;
             &.violet {
                 width: 285px;
-                @keyframes bound {
-                    0% {
-                        top: -15px;
-                    }
-                    50% {
-                        top: 0;
-                    }
-                    100% {
-                        top: -15px;
-                    }
-                }
             }
         }
     }
@@ -1376,9 +1333,6 @@
             transform: translateY(-50%);
             background: url('/images/deco_9.png') center no-repeat;
             background-size: 100%;
-        }
-        .inner {
-            width: 1020px;
         }
         .review_text {
             height: 115px;
