@@ -1429,44 +1429,9 @@
         height: 332px;
         bottom: -70px;
     }
-    // 세대별 강의
-    .generation {
-        .content_title {
-            padding: 135px 0 50px;
-            line-height: 30px;
-            font-size: 30px;
-        }
-        .generation_list {
-            padding: 0 87px;
-            figure {
-                margin-bottom: 30px;
-            }
-            .text_box {
-                .list_title {
-                    margin-bottom: 23px;
-                }
-            }
-        }
-    }
     // 탭메뉴
-    .tab_area {
-        position: relative;
-        padding: 16rem 0 14.5rem;
-        .content_title {
-            text-align: left;
-        }
-        .content_comment {
-            margin: 28px 0 65px;
-            text-align: left;
-        }
-    }
     .tab_btns {
-        width: 180px;
         li {
-            max-width: 180px;
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 25px;
             a {
                 height: 72px;
                 font-size: 22px;
