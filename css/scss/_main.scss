@@ -1502,19 +1502,9 @@
             max-width: 1020px;
             padding: 0;
         }
-        .plan_list {
-            li {
-                margin-top: 125px;
-                &:nth-child(3) {
-                    margin-top: 0;
-                }
-            }
-        }
     }
     .codeit_review {
-        position: relative;
         height: 580px;
-        padding: 90px 0 120px;
         background-color: $white;
         &::after {
             position: absolute;
@@ -1539,9 +1529,6 @@
             background: url('/images/deco_9.png') center no-repeat;
             background-size: 100%;
         }
-        .review_list {
-            margin-top: 40px;
-        }
         .max_width {
             width: 1000px;
         }
@@ -1554,42 +1541,5 @@
     }
     .swiper-button-next {
         transform: translate(520px, 20px);
-    }
-    // 문의하기 영역
-    .contact_area {
-        text-align: left;
-        padding: 170px 0 220px;
-        &::before {
-            width: 717px;
-            height: 557px;
-            top: -5.9rem;
-            left: 50%;
-            transform: translateX(-818px);
-            background-size: 717px 557px;
-        }
-        &::after {
-            position: absolute; 
-            content: '';
-            width: 344px;
-            height: 344px;
-            right: 0;
-            bottom: -110px;
-            background: url('/images/deco_10.png') center no-repeat;
-            background-size: 100%;
-            z-index: -1;
-        }
-        padding-left: 50%;
-        .content_title {
-            padding-bottom: 50px;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 58px;
-            strong {
-                font-size: 40px;
-            }
-        }
-        >.content {
-            display: inline-block;
-        }
     }
 }
