@@ -263,8 +263,6 @@ footer {
             a {
                 width: 3.6rem;
                 height: 3.6rem;
-                margin: 0 .35rem;
-                border-radius: 50%;
                 img {
                     width: 1.4rem;
                 }
@@ -275,28 +273,12 @@ footer {
         }
         .info {
             margin-bottom: 0;
-            text-align: left;
             .info_text {
                 @include flex($justify:start, $wrap:wrap);
-                span {
-                    padding: 0 1.2rem .8rem .6rem;
-                    &::after {
-                        height: 1.4rem;
-                    }
-                }
             }
         }
         .terms {
             @include flex($justify:start);
-            text-align: left;
-            a {
-                padding: 0 .4rem;
-                &:first-child {
-                    &::after {
-                        height: 1.5rem;
-                    }
-                }
-            }
         }
     }
     .popup_back {
