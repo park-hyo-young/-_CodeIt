@@ -13,7 +13,7 @@
     width: 100%;
     z-index: 1;
 }
-.box_area {
+.padding_box {
     width: 100%;
     padding: 0 2rem;
     margin: 0 auto;
@@ -24,7 +24,7 @@
 }
 
 @media (min-width : 768px) {
-    .box_area {
+    .padding_box {
         padding: 0 4rem;
     }
     .inner {
@@ -32,7 +32,7 @@
     }
 }
 @media (min-width : 991px) {
-    .box_area {
+    .padding_box {
         padding: 0 20px;
     }
     .inner {
@@ -40,7 +40,7 @@
     }
 }
 @media (min-width : 1199px) {
-    .box_area {
+    .padding_box {
         padding: 0 20px;
     }
     .inner {
